@@ -14,8 +14,8 @@ variable "AWS_SECRET_ACCESS_KEY" {
 # variables for EC2 secret key
 variable "EC2-key-pair" {
   type    = string
-  description = "import from EC2 Key-pair attribute"
-  default = "aws-pro"
+  description = "import from EKS NODE EC2 Key-pair attribute"
+  default = "test-for-ECS"
 }
 
 
