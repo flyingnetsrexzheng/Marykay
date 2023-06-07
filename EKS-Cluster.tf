@@ -79,8 +79,8 @@ resource "aws_eks_node_group" "Terraform_EKS_Node1" {
   # 伸缩节点设置
   scaling_config {
     desired_size = 2
-    max_size     = 1
-    min_size     = 2
+    max_size     = 2
+    min_size     = 1
 
   }
   remote_access {
