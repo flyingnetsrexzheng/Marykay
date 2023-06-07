@@ -70,7 +70,7 @@ resource "aws_security_group" "exampleEKSNODE" {
 # 创建EKS Node组
 resource "aws_eks_node_group" "Terraform_EKS_Node1" {
   cluster_name    = aws_eks_cluster.Terraform_EKS_Cluster.name
-  node_group_name = "default"
+  node_group_name = "Marykay-node1"
   node_role_arn   = aws_iam_role.EKS_Node_Role.arn
   subnet_ids      = [aws_subnet.a_private1.id,aws_subnet.a_private2.id,aws_subnet.a_private3.id]
   disk_size       = "300"
